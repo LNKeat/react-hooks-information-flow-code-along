@@ -5,6 +5,8 @@ export function getRandomColor() {
   let color = "#";
   for (let i = 0; i < 3; i++) {
     color += letters[Math.floor(Math.random() * 11)];
+    console.log('inside loop: ', console.log(color, Math.floor(Math.random())))
   }
+  
   return color;
 }
